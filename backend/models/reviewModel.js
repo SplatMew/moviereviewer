@@ -7,19 +7,19 @@ const postSchema = new mongoose.Schema({
         trim: true,
     },
 
-    description:{
+    description: {
         type: String,
         required: true,
         trim: true,
     },
 
-    localrating:{
-        type: int,
+    localrating: {
+        type: Number,
         required:true,
     },
 
     globalrating:{
-        type:int
+        type: Number
     },
 
     image:{

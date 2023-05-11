@@ -8,8 +8,8 @@ export const getReviews = async (req,res) =>{
 }
 
 export const createReview = async (req,res) => {
-    const{title, description} = req.body;
-    const newPost = new Post({title, description,localrating})
+    const{title, description, localrating} = req.body;
+    const newPost = new Post({title, description, localrating})
     console.log(newPost)
     await newPost.save()
     return res.json(newPost)
