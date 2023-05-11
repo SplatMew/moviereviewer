@@ -3,7 +3,7 @@ import {getReviews, createReview, updateReview, deleteReview, getReview} from '.
 
 const router = Router();
 
-router.get('/movies', getReviews);
+router.get('/', getReviews);
 router.post('/movies', createReview);
 router.put('/movies/:id', updateReview);
 router.delete('/movies/:id', deleteReview);
