@@ -9,7 +9,6 @@ const postSchema = new mongoose.Schema({
 
     description: {
         type: String,
-        required: true,
         trim: true,
     },
 
@@ -25,7 +24,15 @@ const postSchema = new mongoose.Schema({
     image:{
         url: String,
         public_id: String
+    },
+
+    imdbid:{
+        type: String,
+    },
+
+    year:{
+        type: String,
     }
 });
 
-export default mongoose.model('Post', postSchema);
+export default mongoose.model('Review', postSchema);
